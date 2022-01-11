@@ -16,7 +16,7 @@ function Phrase(content) {
         
     // Returns the letters in the content.
     this.letters = function letters() {
-        return this.content.match(/[a-z]/gi).join(""); // better than the book
+        return this.content.match(/[a-z]/gi || []).join(""); // better than the book
     }
     
     // Returns true if the phrase is a palindrome, false otherwise.
